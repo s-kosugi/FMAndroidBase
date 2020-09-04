@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Player\cPlayer.cpp" />
+    <ClCompile Include="src\BaseObject\cSpriteObject.cpp" />
+    <ClCompile Include="src\BaseObject\IBaseObject.cpp" />
+    <ClCompile Include="src\DebugFunc\cDebugFunc.cpp" />
+    <ClCompile Include="src\DrawCtrl\Camera\cCamera.cpp" />
+    <ClCompile Include="src\DrawCtrl\Sprite\cSprite.cpp" />
+    <ClCompile Include="src\DrawCtrl\Surface\cSurface.cpp" />
+    <ClCompile Include="src\DrawCtrl\Transition\cTransition.cpp" />
+    <ClCompile Include="src\DrawCtrl\cDrawCtrl.cpp" />
+    <ClCompile Include="src\DrawCtrl\IDrawBase.cpp" />
+    <ClCompile Include="src\Input\JoyPad\cJoyPad.cpp" />
+    <ClCompile Include="src\Input\Keyboard\cKeyboard.cpp" />
+    <ClCompile Include="src\Input\Mouse\cMouse.cpp" />
+    <ClCompile Include="src\Input\XController\cXController.cpp" />
+    <ClCompile Include="src\Input\cControllerManager.cpp" />
+    <ClCompile Include="src\MovieManager\cMovieManager.cpp" />
+    <ClCompile Include="src\SceneManager\Scene\GameMain\cGameMain.cpp" />
+    <ClCompile Include="src\SceneManager\Scene\Pause\cPause.cpp" />
+    <ClCompile Include="src\SceneManager\Scene\Title\cTitle.cpp" />
+    <ClCompile Include="src\SceneManager\Scene\IBaseScene.cpp" />
+    <ClCompile Include="src\SceneManager\cSceneManager.cpp" />
+    <ClCompile Include="src\SoundCtrl\cSoundCtrl.cpp" />
+    <ClCompile Include="src\Utility\CsvReader\cCsvReader.cpp" />
+    <ClCompile Include="src\Utility\Easing\Easing.cpp" />
+    <ClCompile Include="src\Utility\Vector\cVector2.cpp" />
+    <ClCompile Include="src\Utility\Vector\cVector3.cpp" />
+    <ClCompile Include="src\cGame.cpp" />
+    <ClCompile Include="src\Input\Touch\cTouch.cpp" />
+    <ClCompile Include="src\Sensor\cSensor.cpp" />
+    <ClCompile Include="src\Utility\Timer\cTimer.cpp" />
+    <ClCompile Include="src\DataManager\cDataManager.cpp" />
+    <ClCompile Include="src\BaseObject\cTransitionObject.cpp" />
+    <ClCompile Include="src\Utility\Number\cNumber.cpp" />
+    <ClCompile Include="src\DrawCtrl\Text\cText.cpp" />
+    <ClCompile Include="src\BaseObject\TextObject\cTextObject.cpp" />
+    <ClCompile Include="src\BaseObject\cSurfaceObject.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Bullet\cBulletManager.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Bullet\IBullet.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Bullet\NormalBullet\cNormalBullet.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Enemy\cEnemyManager.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Enemy\EnmWhite\cEnmWhite.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Enemy\IEnemy.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\cUIManager.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\ScoreBoard\cScoreBoard.cpp" />
+    <ClCompile Include="src\ScoreManager\cScoreManager.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Effect\cEffectManager.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Effect\IEffect.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Effect\BomEffect\cBomEffect.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\Button\IButton.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\Button\StartButton\cStartButton.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Effect\MuzzleFlashEffect\cMuzzleFlashEffect.cpp" />
+    <ClCompile Include="src\SceneManager\Scene\Result\cResult.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\Button\TitleButton\cTitleButton.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Enemy\EnmBlue\cEnmBlue.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Enemy\EnmYellow\cEnmYellow.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Enemy\EnmRed\cEnmRed.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Bullet\BomLaser\cBomLaser.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Effect\LaserEffect\cLaserEffect.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\Effect\LaserStartEffect\cLaserStartEffect.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\GameStartObject\cReadyFont.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\GameStartObject\cGoFont.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\GameStartObject\cTItleCursol.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="BaseObject">
+      <UniqueIdentifier>{74df536c-c653-44b8-9bb7-92104175ce1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{9046fded-ab1c-4db7-91f3-1416b3868a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Vector">
+      <UniqueIdentifier>{1c299ca4-7bea-4de3-9ab2-2dc3517d1ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\StrControl">
+      <UniqueIdentifier>{528cc9d5-d9fb-4fef-a6bd-e69f8a383e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Easing">
+      <UniqueIdentifier>{eebf5df4-bd11-4c36-92c1-a7213ee048c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\CsvReader">
+      <UniqueIdentifier>{4c38f0bc-eece-49c2-9bc4-cbaffaa5db86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cGame.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Player\cPlayer.h" />
+    <ClInclude Include="src\BaseObject\cSpriteObject.h" />
+    <ClInclude Include="src\BaseObject\IBaseObject.h" />
+    <ClInclude Include="src\BaseObject\IBaseSingleton.h" />
+    <ClInclude Include="src\DebugFunc\cDebugFunc.h" />
+    <ClInclude Include="src\DrawCtrl\Camera\cCamera.h" />
+    <ClInclude Include="src\DrawCtrl\Sprite\cSprite.h" />
+    <ClInclude Include="src\DrawCtrl\Surface\cSurFace.h" />
+    <ClInclude Include="src\DrawCtrl\Transition\cTransition.h" />
+    <ClInclude Include="src\DrawCtrl\cDrawCtrl.h" />
+    <ClInclude Include="src\DrawCtrl\IDrawBase.h" />
+    <ClInclude Include="src\Input\JoyPad\cJoyPad.h" />
+    <ClInclude Include="src\Input\Keyboard\cKeyboard.h" />
+    <ClInclude Include="src\Input\Mouse\cMouse.h" />
+    <ClInclude Include="src\Input\XController\cXController.h" />
+    <ClInclude Include="src\Input\cControllerManager.h" />
+    <ClInclude Include="src\MovieManager\cMovieManager.h" />
+    <ClInclude Include="src\MovieManager\MovieID.h" />
+    <ClInclude Include="src\SceneManager\Scene\GameMain\cGameMain.h" />
+    <ClInclude Include="src\SceneManager\Scene\Pause\cPause.h" />
+    <ClInclude Include="src\SceneManager\Scene\Title\cTitle.h" />
+    <ClInclude Include="src\SceneManager\Scene\IBaseScene.h" />
+    <ClInclude Include="src\SceneManager\cSceneManager.h" />
+    <ClInclude Include="src\SceneManager\SceneID.h" />
+    <ClInclude Include="src\SoundCtrl\cSoundCtrl.h" />
+    <ClInclude Include="src\SoundCtrl\SoundID.h" />
+    <ClInclude Include="src\Utility\CsvReader\cCsvReader.h" />
+    <ClInclude Include="src\Utility\Easing\Easing.h" />
+    <ClInclude Include="src\Utility\Vector\cVector2.h" />
+    <ClInclude Include="src\Utility\Vector\cVector3.h" />
+    <ClInclude Include="src\Utility\memory.h" />
+    <ClInclude Include="src\Utility\utility.h" />
+    <ClInclude Include="src\Input\Touch\cTouch.h" />
+    <ClInclude Include="src\Sensor\cSensor.h" />
+    <ClInclude Include="src\Utility\Timer\cTimer.h" />
+    <ClInclude Include="src\DataManager\cDataManager.h" />
+    <ClInclude Include="src\BaseObject\cTransitionObject.h" />
+    <ClInclude Include="src\Utility\Number\cNumber.h" />
+    <ClInclude Include="src\DrawCtrl\Text\cText.h" />
+    <ClInclude Include="src\BaseObject\TextObject\cTextObject.h" />
+    <ClInclude Include="src\BaseObject\cSurfaceObject.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Bullet\cBulletManager.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Bullet\IBullet.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Bullet\BulletID.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Bullet\NormalBullet\cNormalBullet.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\cEnemyManager.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\IEnemy.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\EnemyID.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\EnmWhite\cEnmWhite.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\cUIManager.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\UIID.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\ScoreBoard\cScoreBoard.h" />
+    <ClInclude Include="src\ScoreManager\cScoreManager.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\cEffectManager.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\EffectID.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\IEffect.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\BomEffect\cBomEffect.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\Button\IButton.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\Button\StartButton\cStartButton.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\MuzzleFlashEffect\cMuzzleFlashEffect.h" />
+    <ClInclude Include="src\SceneManager\Scene\Result\cResult.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\Button\TitleButton\cTitleButton.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\EnmBlue\cEnmBlue.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\EnmYellow\cEnmYellow.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Enemy\EnmRed\cEnmRed.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Bullet\BomLaser\cBomLaser.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\LaserEffect\cLaserEffect.h" />
+    <ClInclude Include="src\BaseObject\GameObject\Effect\LaserStartEffect\cLaserStartEffect.h" />
+    <ClInclude Include="src\BaseObject\GameObject\GameStartObject\cReadyFont.h" />
+    <ClInclude Include="src\BaseObject\GameObject\GameStartObject\cGoFont.h" />
+    <ClInclude Include="src\BaseObject\GameObject\GameStartObject\cTitleCursol.h" />
+  </ItemGroup>
+</Project>

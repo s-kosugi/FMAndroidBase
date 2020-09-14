@@ -14,6 +14,7 @@
 
 class IEffect;
 
+// エフェクト管理クラス
 class cEffectManager : public IBaseObject
 {
 public:
@@ -22,13 +23,13 @@ public:
 	~cEffectManager(void);
 
 	// 初期化
-	void Initialize(void);
+	void Initialize(void) override;
 
 	// 更新
-	void Update(void);
+	void Update(void) override;
 
 	// 破棄
-	IBaseObject* Finalize(void);
+	IBaseObject* Finalize(void) override;
 
 	// 生成
 	IEffect* Create(EFFECT_ID id,const cVector2& pos);

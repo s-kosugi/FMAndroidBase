@@ -242,7 +242,6 @@
     <ClCompile Include="src\BaseObject\cSpriteObject.cpp" />
     <ClCompile Include="src\BaseObject\cSurfaceObject.cpp" />
     <ClCompile Include="src\BaseObject\cTransitionObject.cpp" />
-    <ClCompile Include="src\BaseObject\GameObject\EasingTest\cEasingTest.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\Effect\BomEffect\cBomEffect.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\Effect\cEffectManager.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\Effect\IEffect.cpp" />
@@ -256,7 +255,6 @@
     <ClCompile Include="src\cGame.cpp" />
     <ClCompile Include="src\DataManager\cDataManager.cpp" />
     <ClCompile Include="src\DebugFunc\cDebugFunc.cpp" />
-    <ClCompile Include="src\DrawCtrl\Camera\cCamera.cpp" />
     <ClCompile Include="src\DrawCtrl\cDrawCtrl.cpp" />
     <ClCompile Include="src\DrawCtrl\IDrawBase.cpp" />
     <ClCompile Include="src\DrawCtrl\Sprite\cSprite.cpp" />
@@ -288,7 +286,6 @@
     <ClInclude Include="src\BaseObject\cSpriteObject.h" />
     <ClInclude Include="src\BaseObject\cSurfaceObject.h" />
     <ClInclude Include="src\BaseObject\cTransitionObject.h" />
-    <ClInclude Include="src\BaseObject\GameObject\EasingTest\cEasingTest.h" />
     <ClInclude Include="src\BaseObject\GameObject\Effect\BomEffect\cBomEffect.h" />
     <ClInclude Include="src\BaseObject\GameObject\Effect\cEffectManager.h" />
     <ClInclude Include="src\BaseObject\GameObject\Effect\EffectID.h" />
@@ -305,7 +302,6 @@
     <ClInclude Include="src\cGame.h" />
     <ClInclude Include="src\DataManager\cDataManager.h" />
     <ClInclude Include="src\DebugFunc\cDebugFunc.h" />
-    <ClInclude Include="src\DrawCtrl\Camera\cCamera.h" />
     <ClInclude Include="src\DrawCtrl\cDrawCtrl.h" />
     <ClInclude Include="src\DrawCtrl\IDrawBase.h" />
     <ClInclude Include="src\DrawCtrl\Sprite\cSprite.h" />

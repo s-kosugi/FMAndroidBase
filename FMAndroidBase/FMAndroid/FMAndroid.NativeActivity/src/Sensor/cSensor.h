@@ -16,7 +16,7 @@ class cSensor : public IBaseObject
 {
 public:
 
-	void Initialize(void);
+	void Initialize(void) override;
 
 	// 加速度センサー値の取得
 	inline cVector3 GetAccele( void ) { VECTOR v = GetAndroidSensorVector(DX_ANDROID_SENSOR_ACCELEROMETER); return cVector3(v.x, v.y, v.z);};
@@ -50,7 +50,7 @@ private:
 	cSensor& operator = (const cSensor& t) { return *this; };  // オブジェクトの複製禁止(代入演算子のオーバーロード)
 public:
 	// シングルトンオブジェクトにはDELETEアクセスをさせない。
-	IBaseObject* Finalize(void) { IBaseObject::Finalize(); return nullptr; };
+	IBaseObject* Finalize(void) override { IBaseObject::Finalize(); return nullptr; };
 
 	static cSensor& GetInstance(void) {
 		static cSensor instance;   // 唯一の実体であるオブジェクト、static変数を使用する事で１つの共有の変数となる

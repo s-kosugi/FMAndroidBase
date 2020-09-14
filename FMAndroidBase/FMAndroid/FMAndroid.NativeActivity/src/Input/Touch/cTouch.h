@@ -33,8 +33,8 @@ public:
 	};
 
 
-	void Initialize(void);
-	void Update(void);
+	void Initialize(void) override;
+	void Update(void) override;
 
 	// 特定箇所の範囲がタッチされているかを確認する(円判定)
 	// pos   : 指定ポイント
@@ -84,7 +84,7 @@ private:
 	cTouch& operator = (const cTouch& t) { return *this; };  // オブジェクトの複製禁止(代入演算子のオーバーロード)
 public:
 	// シングルトンオブジェクトにはDELETEアクセスをさせない。
-	IBaseObject* Finalize(void) { IBaseObject::Finalize(); return nullptr; };
+	IBaseObject* Finalize(void) override { IBaseObject::Finalize(); return nullptr; };
 
 	static cTouch& GetInstance(void) {
 		static cTouch instance;   // 唯一の実体であるオブジェクト、static変数を使用する事で１つの共有の変数となる

@@ -9,7 +9,8 @@
 /*==============================================================================*/
 
 #include "..\..\..\cSpriteObject.h"
-// ボタンクラス
+
+// 基底ボタンクラス
 class IButton : public cSpriteObject
 {
 public:

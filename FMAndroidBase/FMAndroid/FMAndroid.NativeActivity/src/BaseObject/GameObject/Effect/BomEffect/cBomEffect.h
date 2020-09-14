@@ -18,7 +18,7 @@ public:
 	cBomEffect(IBaseObject* parent);
 
 	// ‰Šú‰»
-	void Initialize(const cVector2& pos);
+	void Initialize(const cVector2& pos) override;
 
 private:
 	//--------------------------------------------------------------------------------------------

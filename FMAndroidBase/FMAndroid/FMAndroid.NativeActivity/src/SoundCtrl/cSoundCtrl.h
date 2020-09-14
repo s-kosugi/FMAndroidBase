@@ -25,9 +25,9 @@ public:
 		NUM
 	};
 
-	void Initialize(void);
-	void Update(void);
-	IBaseObject* Finalize(void);
+	void Initialize(void) override;
+	void Update(void) override;
+	IBaseObject* Finalize(void) override;
 
 	// サウンドの読み込み
 	// 引数 : id サウンドのID   bufnum 同時再生可能数
@@ -97,9 +97,9 @@ private:
 
 	//--------------------------------------------------------------------------------------
 	// 定数
-	const int LOADSOUND_FAILED = -1;		 // LoaSoundMem失敗
+	static const int LOADSOUND_FAILED;		 // LoaSoundMem失敗
 
-	const int DEFAULT_MASTER_VOLUME = 100;
+	static const int DEFAULT_MASTER_VOLUME;  // 初期の全体音量
 
 	// サウンド名テーブル
 	std::string SOUNDNAME_TABLE[(int)SOUND_ID::MAX] =

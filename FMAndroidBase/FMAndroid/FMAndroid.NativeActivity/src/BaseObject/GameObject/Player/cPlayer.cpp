@@ -48,7 +48,7 @@ void cPlayer::Initialize(void)
 {
 	m_vPos = { START_POS_X,START_POS_Y };
 	SetPriority(PRIORITY);
-	//SetAnimation(0,0, SIZE_X, SIZE_Y, ANIM_NUM, ANIM_TIME);
+	SetSrcRect(0, 0, SIZE_X, SIZE_Y);
 	cSpriteObject::Initialize();
 }
 
@@ -73,29 +73,6 @@ void cPlayer::Update(void)
 	{
 		m_vPos.y += MOVE_SPEED;
 	}
-
-#ifdef DEBUG
-	// テストコード
-	if (cControllerManager::GetInstance().CheckTrigger(cControllerManager::KEY_2) || 1 <= GetTouchInputNum())
-	{
-		static int i = 0;
-		i++;
-		std::ostringstream oss;
-		oss << "test" << i ;
-		//cDebugFunc::GetInstance().PushDebugLog(oss.str().c_str());
-	}
-#endif // DEBUG
-
-	/*if (cControllerManager::GetInstance().CheckTrigger(cControllerManager::KEY_3))
-		cGame::GetInstance().SetFPS(60);*/
-	/*if (cControllerManager::GetInstance().CheckTrigger(cControllerManager::KEY_3))
-	{
-		cSoundCtrl::GetInstance().Play(SOUND_BGM);
-	}
-	if (cControllerManager::GetInstance().CheckTrigger(cControllerManager::KEY_4))
-	{
-		cSoundCtrl::GetInstance().SetFrequency(SOUND_BGM, cSoundCtrl::GetInstance().GetFrequency(SOUND_BGM) * 1.1);
-	}*/
 	// 範囲外処理
 	ProcAreaOut();
 

@@ -18,7 +18,7 @@ public:
 	cMuzzleFlashEffect(IBaseObject* parent);
 
 	// èâä˙âª
-	void Initialize(const cVector2& pos);
+	void Initialize(const cVector2& pos) override;
 
 private:
 	//--------------------------------------------------------------------------------------------

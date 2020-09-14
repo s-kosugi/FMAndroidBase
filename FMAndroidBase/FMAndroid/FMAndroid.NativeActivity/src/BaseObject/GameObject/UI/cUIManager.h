@@ -24,7 +24,7 @@ public:
 	~cUIManager( void );
 
 	// ‰Šú‰»
-	void Initialize( void );
+	void Initialize( void ) override;
 
 	// UI¶¬
 	cSpriteObject* Create( UIID id ,const cVector2& pos);

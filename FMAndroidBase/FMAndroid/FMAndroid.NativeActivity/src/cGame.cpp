@@ -14,7 +14,6 @@
 #include "Input\cControllerManager.h"
 #include "Input/Touch/cTouch.h"
 #include "SceneManager\cSceneManager.h"
-#include "DrawCtrl/Camera/cCamera.h"
 #include "BaseObject/GameObject/Effect/cEffectManager.h"
 
 #include "Utility\memory.h"
@@ -79,9 +78,6 @@ void cGame::Initialize(void)
 
 	// シーンマネージャークラス
 	AddChild(&cSceneManager::GetInstance());
-
-	// カメラクラス
-	AddChild(&cCamera::GetInstance());
 
 #ifdef DEBUG
 	// デバッグ機能クラス

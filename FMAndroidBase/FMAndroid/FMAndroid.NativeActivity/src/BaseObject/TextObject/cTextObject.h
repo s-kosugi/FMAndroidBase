@@ -23,10 +23,10 @@ public:
 	~cTextObject(void);
 
 
-	void Initialize(void);
+	void Initialize(void) override;
 	void Initialize( const cVector2& pos );
-	void Update(void);
-	IBaseObject* Finalize(void);
+	void Update(void) override;
+	IBaseObject* Finalize(void) override;
 
 private:
 

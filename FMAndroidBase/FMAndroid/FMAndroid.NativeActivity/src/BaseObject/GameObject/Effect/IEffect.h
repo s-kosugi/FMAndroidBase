@@ -18,11 +18,11 @@ public:
 	IEffect(IBaseObject* parent, const std::string object_name, const std::string graphic_file_name);
 
 	// èâä˙âª
-	void Initialize(void);
-	void Initialize(const cVector2& pos);
+	virtual void Initialize(void);
+	virtual void Initialize(const cVector2& pos);
 
-	void Update(void);
-	IBaseObject* Finalize(void);
+	virtual void Update(void);
+	virtual IBaseObject* Finalize(void);
 
 	inline POINT GetAnimeSize(void) { return m_ptSize; };
 	inline short GetColumnNum(void) { return m_nColNum; };

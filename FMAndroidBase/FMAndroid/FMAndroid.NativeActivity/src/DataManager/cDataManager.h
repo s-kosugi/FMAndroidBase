@@ -27,7 +27,7 @@ class cDataManager : public IBaseObject
 {
 public:
 	// 破棄
-	IBaseObject* Finalize(void);
+	IBaseObject* Finalize(void) override;
 
 	// セーブデータ構造体
 	// 保存対象の物をメンバに追加しておくこと

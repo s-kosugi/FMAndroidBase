@@ -515,7 +515,7 @@ bool cDrawCtrl::DrawSurface(cSurface * obj)
 	{
 		// サーフェイスの内容を描画
 		DrawRectRotaGraph3F(obj->GetPos().x, obj->GetPos().y, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top,
-			obj->GetCenter().x, obj->GetCenter().y, obj->GetScale().x, obj->GetScale().y, DEG_TO_RAD(obj->GetAngle().x), obj->m_nGraphHandle,
+			obj->GetCenter().x, obj->GetCenter().y, obj->GetScale().x, obj->GetScale().y, DEG_TO_RAD(obj->GetAngle()), obj->m_nGraphHandle,
 			TRUE);
 	}
 	// 処理中のサーフェイスポインタを初期化

@@ -54,6 +54,7 @@
     <ClCompile Include="src\BaseObject\GameObject\UI\StartFont\cStartFont.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\Effect\CoinEffect\cCoinEffect.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\UI\TitleLogo\cTitleLogo.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\TouchFont\cTouchFont.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="BaseObject">
@@ -137,5 +138,6 @@
     <ClInclude Include="src\BaseObject\GameObject\UI\StartFont\cStartFont.h" />
     <ClInclude Include="src\BaseObject\GameObject\Effect\CoinEffect\cCoinEffect.h" />
     <ClInclude Include="src\BaseObject\GameObject\UI\TitleLogo\cTitleLogo.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\TouchFont\cTouchFont.h" />
   </ItemGroup>
 </Project>

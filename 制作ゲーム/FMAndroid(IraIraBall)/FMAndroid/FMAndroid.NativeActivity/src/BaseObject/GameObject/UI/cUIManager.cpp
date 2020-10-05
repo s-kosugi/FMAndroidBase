@@ -13,6 +13,7 @@
 #include "StartFont/cStartFont.h"
 #include "ClearFont/cClearFont.h"
 #include "TitleLogo/cTitleLogo.h"
+#include "TouchFont/cTouchFont.h"
 
 //==========================================================================================
 // íËêî
@@ -69,6 +70,7 @@ cSpriteObject * cUIManager::Create(UIID id)
 	case UIID::START_FONT: pObj = CreateObject<cStartFont>(this); break;
 	case UIID::CLEAR_FONT: pObj = CreateObject<cClearFont>(this); break;
 	case UIID::TITLE_LOGO: pObj = CreateObject<cTitleLogo>(this); break;
+	case UIID::TOUCH_FONT: pObj = CreateObject<cTouchFont>(this); break;
 	default: break;
 	}
 	if (pObj)

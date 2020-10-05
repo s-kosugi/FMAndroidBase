@@ -58,6 +58,9 @@ private:
 	// ゴール状態の時間
 	static const float GOAL_TIME;
 
+	// 表示優先度
+	static const int   PRIORITY;
+
 	// 速度
 	cVector2 m_vVelocity;
 

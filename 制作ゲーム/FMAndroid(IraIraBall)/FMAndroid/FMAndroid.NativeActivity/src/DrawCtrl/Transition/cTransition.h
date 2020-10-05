@@ -54,6 +54,7 @@ public:
 		RANGE_255 = 255,
 	};
 
+	//--------------------------------------------------------------------
 	// Getter
 	inline IDrawBase* GetTransObject(void) { return m_pTransObj; };
 	inline float		GetBorderParam(void) { return m_fBorderParam; };
@@ -63,9 +64,18 @@ public:
 	//  ret : true 終了した false : 再生中
 	bool				IsEnd(void);
 
+	//---------------------------------------------------------------------
 	// Setter
 	inline void SetTransTime(float time) { m_fTransTime = time; };
-	inline void SetTransDirection(TransDirection value) { m_eTransDirection = value; value == TransDirection::TRANS_IN ? m_fBorderParam = 0.0f : m_fBorderParam = (float)BORDER_MAX; };
+
+	//  トランジション方向の設定
+	void SetTransDirection(TransDirection value);
+
+	// トランジションの最大時間の設定
+	inline void SetLimitTime(float time) { m_cTimer.SetLimit(time); };
+
+	// トランジション経過時間のリセット
+	inline void ResetTimer(void) { m_cTimer.Reset(); };
 
 private:
 	//---------------------------------------------------------------------
@@ -76,7 +86,7 @@ private:
 
 
 
-	IDrawBase* m_pTransObj;		// 遷移先の画像のポインタ
+	IDrawBase*		m_pTransObj;		// 遷移先の画像のポインタ
 	BorderRange		m_eBorderRange;		// DrawBlendGraphで使う境界幅
 	float			m_fBorderParam;		// DrawBlendGraphで使う境界位置
 	TransDirection	m_eTransDirection;	// トランジションを行う方向(フェードインかアウトか)

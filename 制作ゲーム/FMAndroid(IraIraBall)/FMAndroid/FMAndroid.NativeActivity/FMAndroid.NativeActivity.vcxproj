@@ -259,6 +259,7 @@
     <ClCompile Include="src\BaseObject\GameObject\UI\OverTimer\cOverTimer.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\UI\StartFont\cStartFont.cpp" />
     <ClCompile Include="src\BaseObject\GameObject\UI\TitleLogo\cTitleLogo.cpp" />
+    <ClCompile Include="src\BaseObject\GameObject\UI\TouchFont\cTouchFont.cpp" />
     <ClCompile Include="src\BaseObject\IBaseObject.cpp" />
     <ClCompile Include="src\BaseObject\TextObject\cTextObject.cpp" />
     <ClCompile Include="src\cGame.cpp" />
@@ -315,6 +316,7 @@
     <ClInclude Include="src\BaseObject\GameObject\UI\OverTimer\cOverTimer.h" />
     <ClInclude Include="src\BaseObject\GameObject\UI\StartFont\cStartFont.h" />
     <ClInclude Include="src\BaseObject\GameObject\UI\TitleLogo\cTitleLogo.h" />
+    <ClInclude Include="src\BaseObject\GameObject\UI\TouchFont\cTouchFont.h" />
     <ClInclude Include="src\BaseObject\GameObject\UI\UIID.h" />
     <ClInclude Include="src\BaseObject\IBaseObject.h" />
     <ClInclude Include="src\BaseObject\IBaseSingleton.h" />

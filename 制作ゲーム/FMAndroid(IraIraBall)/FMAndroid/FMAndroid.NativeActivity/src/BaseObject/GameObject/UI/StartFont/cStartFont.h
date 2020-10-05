@@ -18,8 +18,8 @@ public:
 	cStartFont(IBaseObject* parent);
 	~cStartFont(void);
 
-	void Initialize(void);
-	void Update(void);
+	void Initialize(void) override;
+	void Update(void) override;
 
 private:
 

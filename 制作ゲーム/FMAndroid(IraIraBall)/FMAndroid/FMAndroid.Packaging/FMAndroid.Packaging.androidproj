@@ -44,34 +44,42 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>Application</ConfigurationType>
+    <TargetName>IrairaMaze</TargetName>
   </PropertyGroup>
   <Import Project="$(AndroidTargetsPath)\Android.props" />
   <ImportGroup Label="ExtensionSettings" />
@@ -122,7 +130,6 @@
     <Content Include="assets\data\csv\maingame_1.csv" />
     <Content Include="assets\data\graphic\black.png" />
     <Content Include="assets\data\graphic\bom_effect.png" />
-    <Content Include="assets\data\graphic\boss_01.png" />
     <Content Include="assets\data\graphic\box.png" />
     <Content Include="assets\data\graphic\clearfont.png" />
     <Content Include="assets\data\graphic\coin.png" />
@@ -133,13 +140,14 @@
     <Content Include="assets\data\graphic\miss_font.png" />
     <Content Include="assets\data\graphic\needleBall.png" />
     <Content Include="assets\data\graphic\Number.png" />
-    <Content Include="assets\data\graphic\player_01.png" />
     <Content Include="assets\data\graphic\rule_00.png" />
     <Content Include="assets\data\graphic\start_font.png" />
     <Content Include="assets\data\graphic\timerFrame.png" />
     <Content Include="assets\data\graphic\title.png" />
     <Content Include="assets\data\graphic\TitleLogo.png" />
-    <Content Include="assets\data\graphic\uri_64_64.png" />
+    <Content Include="assets\data\graphic\TitleLogo_.png" />
+    <Content Include="assets\data\graphic\touch.png" />
+    <Content Include="assets\data\graphic\val_01.png" />
     <Content Include="assets\data\sound\bgm00.ogg" />
     <Content Include="assets\data\sound\se00.ogg" />
     <Content Include="res\drawable-hdpi\ic_launcher.png" />

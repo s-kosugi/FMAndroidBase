@@ -14,5 +14,6 @@ enum class UIID {
 	CLEAR_FONT,				// クリアの文字
 	START_FONT,				// スタートの文字
 	TITLE_LOGO,				// タイトルロゴ
+	TOUCH_FONT,				// タッチしてスタート文字
 	MAX
 };

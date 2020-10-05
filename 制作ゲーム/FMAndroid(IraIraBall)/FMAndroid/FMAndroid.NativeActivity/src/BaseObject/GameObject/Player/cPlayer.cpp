@@ -29,11 +29,12 @@ const float cPlayer::DEAD_TIME = 2.0f;				// 死亡状態の時間
 const float cPlayer::GOAL_TIME = 2.0f;				// ゴール状態の時間
 const int   cPlayer::DEAD_EFFECT_NUM = 12;			// 死亡エフェクトの数
 const float cPlayer::DEAD_EFFECT_SPEED = 5.0f;		// 死亡エフェクトの移動スピード
+const int   cPlayer::PRIORITY = 400;				// 表示優先度
 //==================================================================================
 // コンストラクタ
 //==================================================================================
 cPlayer::cPlayer(IBaseObject * parent):
-	cSpriteObject(parent,"Player","data\\graphic\\uri_64_64.png")
+	cSpriteObject(parent,"Player","data\\graphic\\val_01.png")
 	, m_vVelocity(0.0f,0.0f)
 	, m_eState( STATE::START)
 {
@@ -51,7 +52,7 @@ cPlayer::~cPlayer(void)
 //==================================================================================
 void cPlayer::Initialize(void)
 {
-	SetPriority(100);
+	SetPriority(PRIORITY);
 	m_vVelocity = {0.0f,0.0f};
 }
 
